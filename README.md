@@ -17,8 +17,14 @@ $ npm run start
 $ npm run generate
 ```
 
-## やりたいこと  
+## アプリとしてやりたいこと  
   
 Qiita、Hacker News、MediumのAPIで記事を取得する。  
 最新一覧と、検索語句を登録して関連する記事などの引っ張り方もする。  
 Hacker News ApiはGraphQLもある？
+
+## 技術面でやりたいこと
+  
+Typescript  
+CircleCI  
+Docker
