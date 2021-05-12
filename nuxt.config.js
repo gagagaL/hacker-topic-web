@@ -49,5 +49,9 @@ export default {
         options.loose = true
       },
     },
+  },
+
+  privateRuntimeConfig: {
+    qiitaAccessToken: process.env.QIITA_ACCESS_TOKEN,
   }
 }

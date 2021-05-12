@@ -28,7 +28,15 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
+import axios from 'axios';
+
+interface Todo {
+  userId: number,
+  id: number,
+  title: string,
+  completed: boolean,
+}
 
 export default Vue.extend({})
 </script>

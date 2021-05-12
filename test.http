@@ -1,0 +1,8 @@
+GET http://hacker-news.firebaseio.com/v0/topstories.json?print=pretty
+Accept: application/json
+
+###
+#POST http://hacker-news.firebaseio.com/v0/topstories.json?print=pretty
+#
+##GET http://hacker-news.firebaseio.com/v0/beststories
+
