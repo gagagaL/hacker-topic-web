@@ -28,3 +28,9 @@ Hacker News ApiはGraphQLもある？
 Typescript  
 CircleCI  
 Docker
+
+## 使うAPI、参考  
+
+[qiita api docs](https://qiita.com/api/v2/docs)  
+[medium api docs](https://github.com/Medium/medium-api-docs)  
+[hacker news api docs](https://github.com/HackerNews/API)
