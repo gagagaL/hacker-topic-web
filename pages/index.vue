@@ -30,6 +30,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import axios from 'axios';
+import QiitaNewModule from 'modules/qiita_new.js';
 
 interface Todo {
   userId: number,
@@ -38,7 +39,29 @@ interface Todo {
   completed: boolean,
 }
 
-export default Vue.extend({})
+// var axiosObject = axios.create({
+//   baseURL: 'https://qiita.com/api/v2/items', // バックエンドB のURL:port を指定する
+//   headers: {
+//     'Content-Type': 'application/json',
+//     'X-Requested-With': 'XMLHttpRequest'
+//   },
+//   responseType: 'json'
+// });
+//
+// var option = null;
+//
+// axiosObject.get(url, option)
+//   .then(function(response) {
+//
+//     console.log(response);
+//     // 返ってきたレスポンスはそのまま加工せずに callback で呼び出し元へ渡す
+//     // callback(response);
+//   })
+//   .catch(function(error) {
+//     console.log('ERROR!! occurred in Backend.')
+//   });
+
+export default Vue.extend({});
 </script>
 
 <style>
