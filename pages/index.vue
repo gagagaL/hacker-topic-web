@@ -12,7 +12,7 @@
       <h2>Qiita</h2>
       <el-row :gutter="36">
         <div v-for="data of qiita_result">
-          <el-col :xs="36" :sm="18" :md="18" :lg="18" :xl="36">
+          <el-col class="card-zone">
             <Card :title="data.title" :tags="data.tags" :url="data.url"/>
           </el-col>
         </div>
@@ -36,12 +36,12 @@ interface Todo {
 
 export default Vue.extend({
   asyncData: async function () {
+
     const qiita_url = 'https://qiita.com/api/v2/items'
 
-    const hacker_news_url = 'https://hacker-news.firebaseio.com/v0/maxitem.json?print=pretty'
-
     let qiita_result = await axios.get(qiita_url);
-    let hacker_news_max_item_id = await axios.get(hacker_news_url);
+
+    console.log(qiita_result);
 
     return {qiita_result:qiita_result.data};
   },
@@ -57,7 +57,7 @@ export default Vue.extend({
 
 <style>
 .container {
-  margin: 0 auto;
+  margin: 30px auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -65,7 +65,7 @@ export default Vue.extend({
   text-align: center;
 }
 
-el-row {
+.card-zone {
   margin-bottom: 20px;
 }
 
