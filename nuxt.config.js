@@ -40,6 +40,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/auth',
     '~/modules/qiita_new'
   ],
 
@@ -55,5 +56,23 @@ export default {
 
   privateRuntimeConfig: {
     qiitaAccessToken: process.env.QIITA_ACCESS_TOKEN,
-  }
+  },
+
+  auth: {
+    redirect: {
+      login: '/login',   // 未ログイン時に認証ルートへアクセスした際のリダイレクトURL
+      logout: '/login',  // ログアウト時のリダイレクトURL
+      callback: false,   // Oauth認証等で必要となる コールバックルート
+      home: '/',         // ログイン後のリダイレクトURL
+    },
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'api/login', method: 'post', propertyName: 'token' },
+          user: { url: 'api/me', method: 'get', propertyName: false},
+          logout: false
+        },
+      }
+    }
+  },
 }

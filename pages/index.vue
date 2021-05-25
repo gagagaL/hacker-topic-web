@@ -1,28 +1,22 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        hacker-topic-web
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <el-row :gutter="20">
+        <el-button type="primary" :span="6" @click="goLogin">
+          ログイン画面
+        </el-button>
+        <el-button type="success" :span="6" @click="goRegister">
+          登録画面
+        </el-button>
+      </el-row>
+      <h2>Qiita</h2>
+      <el-row :gutter="10">
+        <div v-for="o in 16" :key="o">
+          <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+            <Card />
+          </el-col>
+        </div>
+      </el-row>
     </div>
   </div>
 </template>
@@ -61,7 +55,15 @@ interface Todo {
 //     console.log('ERROR!! occurred in Backend.')
 //   });
 
-export default Vue.extend({});
+export default Vue.extend({
+  methods: {
+    goLogin() {
+      this.$router.push('/login');
+    },
+    goRegister() {
+      this.$router.push('/register');
+    }
+}});
 </script>
 
 <style>
