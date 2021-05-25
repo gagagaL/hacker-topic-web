@@ -14,3 +14,14 @@ GET /api/v2/items?page=1&per_page=20 HTTP/1.1
 
 
 GET https://qiita.com/api/v2/items
+
+###
+
+GET https://hacker-news.firebaseio.com/v0/items
+###
+
+GET https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
+
+###
+
+GET https://hacker-news.firebaseio.com/v0/maxitem.json?print=pretty

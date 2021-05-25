@@ -41,6 +41,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/auth',
+    '@nuxt/http',
     '~/modules/qiita_new'
   ],
 
