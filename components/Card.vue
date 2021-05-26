@@ -25,7 +25,7 @@ export default {
 </script>
 <style>
 .el-card__header {
-  background-color: rgba(153, 183, 176, 0.96);
+  background-color: #bdd7b1;
 }
 
 .link-text {

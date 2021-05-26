@@ -1,7 +1,7 @@
 <template>
   <el-card class="box-card login">
     <div class="login-container">
-      <span>ログイン</span>
+      <span class="login-title">ログイン</span>
       <el-form :model="form">
         <el-form-item label="メールアドレス">
           <el-input v-model="form.email"></el-input>
@@ -52,5 +52,10 @@ export default {
   margin: 50px auto;
   width: 300px;
   text-align: center;
+}
+
+
+.login-title {
+  color: #5e99cd;
 }
 </style>

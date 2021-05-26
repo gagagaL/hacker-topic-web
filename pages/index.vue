@@ -5,11 +5,11 @@
         <el-button type="primary" :span="6" @click="goLogin">
           ログイン画面
         </el-button>
-        <el-button type="success" :span="6" @click="goRegister">
+        <el-button type="danger" :span="6" @click="goRegister">
           登録画面
         </el-button>
       </el-row>
-      <h2>Qiita</h2>
+      <h2 class="cards">Qiita</h2>
       <el-row :gutter="36">
         <div v-for="data of qiita_result">
           <el-col class="card-zone">
@@ -85,6 +85,10 @@ export default Vue.extend({
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+}
+
+.cards {
+  margin: 30px auto;
 }
 
 .subtitle {
