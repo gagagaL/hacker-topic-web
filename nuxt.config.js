@@ -45,6 +45,8 @@ export default {
     '~/modules/qiita_new'
   ],
 
+  serverMiddleware:['~/server/api.js'],
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
