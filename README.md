@@ -23,15 +23,35 @@ QiitaのAPIで記事を取得する。
 最新一覧と、検索語句を登録して関連する記事などの引っ張り方もする。  
 
 
+
+## テーブル一覧
+
+### users
+
+|id  |name  |email  |created_at  |update_at  |is_delete  |
+|---|---|---|---|---|---|
+
+### tags
+
+|id  |user_id  |tag_name  |created_at  |update_at  |is_delete  |
+|---|---|---|---|---|---|
+
+### favorites
+
+|id  |user_id  |content_id  |created_at  |update_at  |is_delete  |
+|---|---|---|---|---|---|
+
+
+
 ## 技術面でやりたいことTODO
   
 
-- [ ] Jest  
+- [x] Jest仮置き
 - [ ] CircleCI  
 - [ ] Docker  
 - [ ] Mysql接続  
 - [ ] テーブル作成  
-- [ ] テーブル構成をREADMEに記載  
+- [x] テーブル構成をREADMEに記載  
 - [ ] ログイン機能  
 - [ ] ログアウト機能  
 - [ ] ログイン失敗バー  
@@ -40,3 +60,5 @@ QiitaのAPIで記事を取得する。
 - [ ] お気に入りページ  
 - [ ] タグ管理ページ  
 - [ ] タグページ  
+  
+- [ ] CardのJestのパス  
